@@ -4,13 +4,13 @@
 
 #引数は二つであるかをチェック
 check_num(){
-  if [ $# != 2 ]; then
+  if [ $# != 1 ]; then
     echo 引数エラー: $*
     exit 1
   else
     return 0
   fi
-}  
+}
 
 
 # 自然数バリデーション
