@@ -4,7 +4,7 @@
 
 #引数は二つであるかをチェック
 check_num(){
-  if [ $# != 1 ]; then
+  if [ $# != 2 ]; then
     echo 引数エラー: $*
     exit 1
   else
