@@ -1,0 +1,10 @@
+name: actions-trial
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+         chmod +x ./report4_test.sh
+         ./report4_test.sh
